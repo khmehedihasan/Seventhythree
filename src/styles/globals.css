@@ -20,7 +20,7 @@ body {
 }
 
 .bg3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.8)) , url('../images/bgdotted2.jpg');
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4)) , url('../images/bgdotted2.jpg');
 }
 
 .up {

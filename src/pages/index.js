@@ -93,17 +93,79 @@ export default function Home() {
         {/* //--------------------------------------- Team end------------------------------------------ */}
 
 
-        <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-center">
+        <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
           <div className=" w-[1280px] mx-auto">
-            <h1 className=" text-center text-white text-[50px] font-bold">Team</h1>
+            <h1 className=" text-center text-white text-[60px] font-bold">Team</h1>
             <ScrollingCarousel>
-              <div className=" w-[600px] h-[700px] bg-slate-400"></div>
-              <div className=" w-[600px] h-[700px] bg-red-400"></div>
-              <div className=" w-[600px] h-[700px] bg-blue-400"></div>
-              <div className=" w-[600px] h-[700px] bg-green-400"></div>
-              <div className=" w-[600px] h-[700px] bg-blue-400"></div>
-              <div className=" w-[600px] h-[700px] bg-green-400"></div>
-              <div className=" w-[600px] h-[700px] bg-slate-400"></div>
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Andrea Santini</h2>
+                <h3 className=" text-center text-white text-[30px]">Ceo, Founder and Analyst</h3>
+                <h4 className=" text-center text-white text-[20px]">He has extensive experience in financial market analysis</h4>
+              </div>
+
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Marco Di Maggio</h2>
+                <h3 className=" text-center text-white text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
+                <h4 className=" text-center text-white text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
+              </div>
+
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative ">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Lucrezia Menoncello</h2>
+                <h3 className=" text-center text-white text-[30px]">Blockchain investment strategy manager</h3>
+                <h4 className=" text-center text-white text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
+              </div>
+
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Michele Miglio</h2>
+                <h3 className=" text-center text-white text-[30px]">Head of Growth</h3>
+                <h4 className=" text-center text-white text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
+              </div>
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Matteo Arnaboldi</h2>
+                <h3 className=" text-center text-white text-[30px]">CMO</h3>
+                <h4 className=" text-center text-white text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
+              </div>
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative ">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Omar Malik</h2>
+                <h3 className=" text-center text-white text-[30px]">Creative Director</h3>
+                <h4 className=" text-center text-white text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
+              </div>
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Tommaso Macchi</h2>
+                <h3 className=" text-center text-white text-[30px]">Analyst and Startup Selection Manager</h3>
+                <h4 className=" text-center text-white text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
+              </div>
+
+              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
+                <div className=" w-[350px] h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
+                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                </div>
+                <h2 className=" text-center text-white text-[40px] font-bold">Ingan</h2>
+                <h3 className=" text-center text-white text-[30px]">Artificial Intelligence</h3>
+                <h4 className=" text-center text-white text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
+              </div>
+              
 
             </ScrollingCarousel>
 
