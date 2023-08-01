@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Oxanium', cursive;
+    background-image: url('../images/bgdotted.jpg');
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+.bg1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727),rgba(0, 0, 0, 0.8)) , url('../images/bgdotted.jpg');
+}
+.bg2{
+    background-image:  url('../images/video.gif');
+    background-position: center;
+    opacity: .94;
+    background-repeat: no-repeat;
+}
+
+.bg3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.8)) , url('../images/bgdotted2.jpg');
+}
+
+.up {
+    animation: .5s anim-lineUp ease-out ;
+  }
+
+@keyframes anim-lineUp {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -60px;
+    }
+}
+
+.down {
+   animation: .5s anim-lineDown ease-out ;
+}
+
+@keyframes anim-lineDown {
+    0% {
+        margin-top: -60px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
