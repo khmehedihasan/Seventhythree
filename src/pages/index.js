@@ -9,17 +9,20 @@ export default function Home() {
   const [btn1, setBtn1] = useState("");
   const [btn2, setBtn2] = useState("");
   const [slide, setSlide] = useState("slide1");
+  const [bar, setBar] = useState("bar1");
   const [count, setCount] = useState(1)
 
 
 function nxt(){
   if(count == 1){
     setSlide("slide2");
+    setBar("bar2");
     setCount(2)
   }
 
   if(count == 2){
     setSlide("slide3");
+    setBar("bar3");
     setCount(3)
   }
 
@@ -29,11 +32,13 @@ function nxt(){
 function prev(){
   if(count == 3){
     setSlide("slide2");
+    setBar("bar2");
     setCount(2)
   }
 
   if(count == 2){
     setSlide("slide1");
+    setBar("bar1");
     setCount(1)
   }
 
@@ -223,13 +228,15 @@ function prev(){
                 </svg>
                 <div className={` w-full h-[420px] absolute top-0 left-0 btn1 -mt-[420px] ${btn2}`}></div>
               </div>
+              <div className={` ${bar} h-5 bg-white`}></div>
             </div>
             <div className="  w-[1280px] overflow-hidden">
               <div className={`w-[4200px] ${slide}`}>
+                //-----------
                 <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
                   <div className=" text-[80px] font-bold">Service</div>
                   <div className=" w-[50%] text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
-                  <div className=" flex">
+                  <div className=" flex gap-4">
                     <div className=" flex flex-col">
                       <div className=" h-[120px] text-[28px]">Project Evaluation </div>
                       <div className=" text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
@@ -245,8 +252,48 @@ function prev(){
                   </div>
                   <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
-                <div className=" w-[965px] h-[810px] float-left bg-green-600"></div>
-                <div className=" w-[965px] h-[810px] float-left bg-red-600"></div>
+
+                //---------------
+                <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                  <div className=" text-[80px] font-bold">Service</div>
+                    <div className=" w-[50%] text-[34px] font-bold">Crypto-Asset Management</div>
+                    <div className=" flex gap-4">
+                      <div className=" flex flex-col">
+                        <div className=" h-[120px] text-[28px]">Project Evaluation </div>
+                        <div className=" text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
+                      </div>
+                      <div>
+                        <div className=" h-[120px] text-[28px]">Risk Assessment and Compliance</div>
+                        <div className=" text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
+                      </div>
+                      <div>
+                        <div className=" h-[120px] text-[28px]">Market Analysis and Insights</div>
+                        <div className=" text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
+                      </div>
+                    </div>
+                    <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
+                </div>
+
+                //------------
+                <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                  <div className=" text-[80px] font-bold">Service</div>
+                    <div className=" w-[50%] text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
+                    <div className=" flex gap-4">
+                      <div className=" flex flex-col">
+                        <div className=" h-[120px] text-[28px]">Liquidity Provision </div>
+                        <div className=" text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
+                      </div>
+                      <div>
+                        <div className=" h-[120px] text-[28px]">Order Book Management</div>
+                        <div className=" text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
+                      </div>
+                      <div>
+                        <div className=" h-[120px] text-[28px]">Trading Strategies and Execution</div>
+                        <div className=" text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
+                      </div>
+                    </div>
+                    <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
+                </div>
               </div>
             </div>
           </div>
