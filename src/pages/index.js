@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Head from 'next/head';
 import { useState } from "react";
-import { ScrollingCarousel } from '@trendyol-js/react-carousel';
+import { ScrollingCarousel, Carousel } from '@trendyol-js/react-carousel';
 
 export default function Home() {
 
-  const [up, setUp] = useState("")
+  const [up, setUp] = useState("");
+  const [btn1, setBtn1] = useState("");
+  const [btn2, setBtn2] = useState("");
 
 
   return (
@@ -13,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet"></link>
       </Head>
       <div className=" ">
@@ -172,9 +174,35 @@ export default function Home() {
           </div>
         </div>
 
-
-
         {/* //--------------------------------------- Team end------------------------------------------ */}
+
+        {/* //--------------------------------------- Service end------------------------------------------ */}
+        <div className=" w-full h-full bg-slate-300">
+          <div className=" w-[1280px] mx-auto flex">
+            <div className=" w-[300px] h-[700px] bg-amber-700 flex flex-col">
+              <div onMouseLeave={()=>setBtn1("btn1out")} onMouseEnter={()=>setBtn1("btn1in")} className=" h-[300px] flex items-center justify-center relative overflow-hidden">
+                <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
+                </svg>
+                <div className={` w-full h-[300px] absolute top-0 left-0 btn1 mt-[300px] ${btn1}`}></div>
+              </div>
+              <div onMouseLeave={()=>setBtn2("btn2out")} onMouseEnter={()=>setBtn2("btn2in")} className=" h-[300px] flex items-center justify-center relative overflow-hidden">
+                <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
+                </svg>
+                <div className={` w-full h-[300px] absolute top-0 left-0 btn1 -mt-[300px] ${btn2}`}></div>
+              </div>
+            </div>
+            <div className="  w-[1280px] overflow-hidden">
+              <div className=" w-[4200px] ">
+                <div className=" w-[1280px] h-[700px] float-left bg-blue-600"></div>
+                <div className=" w-[1280px] h-[700px] float-left bg-green-600"></div>
+                <div className=" w-[1280px] h-[700px] float-left bg-red-600"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* //--------------------------------------- Service end------------------------------------------ */}
       </div>
     </>
   )

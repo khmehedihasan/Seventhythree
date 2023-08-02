@@ -23,6 +23,10 @@ body {
     background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4)) , url('../images/bgdotted2.jpg');
 }
 
+.bg4{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4)) , url('../images/bgdotted3.png');
+}
+
 .up {
     animation: .5s anim-lineUp ease-out ;
   }
@@ -47,4 +51,27 @@ body {
     100% {
         margin-top: 0px;
     }
+}
+
+.btn1{
+    background-image: linear-gradient(to right,rgba(169, 166, 166, 0.3),rgba(173, 170, 170, 0.3)) , url('../images/bgdotted3.png');
+    opacity: .3;
+    transition: all ease-in .5s;
+
+}
+
+.btn1in{
+    margin-top: 0px;
+}
+
+.btn1out{
+    margin-top: 300px;
+}
+
+.btn2in{
+    margin-top: 0px;
+}
+
+.btn2out{
+    margin-top: -300px;
 }
