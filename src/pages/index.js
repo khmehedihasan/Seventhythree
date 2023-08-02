@@ -1,7 +1,15 @@
 import Link from "next/link";
 import Head from 'next/head';
 import { useState } from "react";
-import { ScrollingCarousel, Carousel } from '@trendyol-js/react-carousel';
+import { ScrollingCarousel } from '@trendyol-js/react-carousel';
+import Image from 'next/image'
+import logo1 from '../images/logo1.png'
+import logo2 from '../images/logo2.png'
+import logo3 from '../images/logo3.png'
+import logo4 from '../images/logo4.png'
+import logo5 from '../images/logo5.png'
+import logo6 from '../images/logo6.png'
+import linkedin from '../images/linkedin.png'
 
 export default function Home() {
 
@@ -75,7 +83,7 @@ function prev(){
 
             <h1 className=" text-[130px] font-thin text-white">Seventhythree</h1>
             <h3 className=" text-[24px] mt-2 font-thin text-white">Venture Capital Specializing in Web3, Blockchain, and Crypto-Asset Management</h3>
-            <button onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-16">
+            <Link href="/contact-us" onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-16">
               <div className="h-16 overflow-hidden">
                 <div className={` flex flex-col ${up}`}>
                   <span className=" text-[40px] font-thin text-white">For investors </span>
@@ -85,7 +93,7 @@ function prev(){
               <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M35 6L25 0.226497V11.7735L35 6ZM0 7H26V5H0V7Z" fill="white"/>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -295,6 +303,25 @@ function prev(){
                     <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* //--------------------------------------- Service end------------------------------------------ */}
+
+        {/* //--------------------------------------- Service end------------------------------------------ */}
+        <div className=" w-full h-[90px] bg4 bg-right bg-cover text-white">
+          <div className=" flex items-center justify-evenly">
+            <div>office@73capital.xyz</div>
+            <div className=" flex gap-4">
+                <Image src={logo1} alt="" />
+                <Image src={logo2} alt="" />
+                <Image src={logo3} alt="" />
+            </div>
+            <div className=" flex gap-4">
+              <Image src={logo4} alt="" />
+              <Image src={logo5} alt="" />
+              <Image src={logo6} alt="" />
+              <Image src={linkedin} alt="" />
             </div>
           </div>
         </div>
