@@ -77,7 +77,7 @@ body {
     margin-top: -420px;
 }
 
-    
+
 .btn1in2{
     margin-left: 0px;
 }
@@ -92,6 +92,21 @@ body {
 
 .btn2out2{
     margin-left: -350px;
+}
+
+.slide1{
+    margin-left: 0px;
+    transition: all ease-in .5s;
+}
+
+.slide2{
+    margin-left: -300px;
+    transition: all ease-in .5s;
+}
+
+.slide3{
+    margin-left: -600px;
+    transition: all ease-in .5s;
 }
 
 @media (min-width: 768px) {

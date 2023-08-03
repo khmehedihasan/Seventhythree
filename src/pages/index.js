@@ -139,76 +139,76 @@ function prev(){
 
 
         <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
-          <div className=" w-[700px] xl:w-[1280px] mx-auto">
-            <h1 className=" text-center text-white text-[60px] font-bold">Team</h1>
-            <ScrollingCarousel>
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+          <div className=" w-[300px] md:w-[700px] xl:w-[1280px] mx-auto">
+            <h1 className=" text-center text-white text-[50px] md:text-[60px] font-bold">Team</h1>
+            <ScrollingCarousel >
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Andrea Santini</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">He has extensive experience in financial market analysis</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He has extensive experience in financial market analysis</h4>
               </div>
 
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Marco Di Maggio</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
               </div>
 
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Lucrezia Menoncello</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
               </div>
 
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Michele Miglio</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Head of Growth</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Head of Growth</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
               </div>
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Matteo Arnaboldi</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">CMO</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">CMO</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
               </div>
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Omar Malik</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Creative Director</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Creative Director</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
               </div>
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Tommaso Macchi</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
               </div>
 
-              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
                 <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Ingan</h2>
-                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
-                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
+                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
+                <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
               </div>
               
 
@@ -307,8 +307,8 @@ function prev(){
               </div>
             </div>
             {/* ///------------------ */}
-            <div className=" xl:hidden w-[300px] md:w-[700px] h-[60px] md:h-[120px] border border-slate-400 flex flex-col">
-              <div className=" w-[700px] h-[112px] flex">
+            <div className=" xl:hidden w-[300px] md:w-[700px] h-[70px] md:h-[120px] border border-slate-400 flex flex-col">
+              <div className=" w-[300px] md:w-[700px] h-[112px] flex">
                 <div onClick={nxt} onMouseLeave={()=>setBtn1("btn1out2")} onMouseEnter={()=>setBtn1("btn1in2")} className=" w-[150px] md:w-[350px] h-[60px] md:h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
                   <svg className=" hidden xl:block" width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>

@@ -16,42 +16,45 @@ function About(){
     }
 
     return(
-        <div className=' h-screen mx-auto'>
+        <div className=' h-full xl:h-screen mx-auto'>
             <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg4 bg-cover bg-center">
-                <nav className=" w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
+                <nav className=" w-[300px] md:w-[700px] xl:w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
                     <div className=" ">
-                        <svg width="99" height="35" viewBox="0 0 99 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M99 8.60789V0H0V8.60789H49.5L26.302 35H99V26.3921L45.6609 26.2297L49.5 21.9258H99V13.1555H57.1782L61.1807 8.60789H99Z" fill="white"/>
+                        <svg className=" w-20 md:w-40" width="99" height="35" viewBox="0 0 99 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M99 8.60789V0H0V8.60789H49.5L26.302 35H99V26.3921L45.6609 26.2297L49.5 21.9258H99V13.1555H57.1782L61.1807 8.60789H99Z" fill="white"/>
                         </svg>
                     </div>
-                    <div className=" w-[250px] flex justify-between">
-                        <button className=" text-[24px] text-slate-300 hover:text-white" >About</button>
-                        <button className=" text-[24px] text-slate-300 hover:text-white" >Service</button>
-                        <button className=" text-[24px] text-slate-300 hover:text-white" >Team</button>
+                    <div className=" xl:w-[250px] flex justify-between gap-2">
+                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</button>
+                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</button>
+                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</button>
                     </div>
                 </nav>
-                <div className=" w-[1280px] h-[700px] py-[200px] mx-auto text-white relative">
-                    <Link href="/" onMouseEnter={()=>setSpn("spn1")} onMouseLeave={()=>setSpn("spn2")} className=" absolute top-28 right-5 cursor-pointer">
-                        <svg className={`${spn}`} width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className=" w-[300px] md:w-[700px] xl:w-[1280px] h-full xl:h-[700px] py-[60px] xl:py-[200px] mx-auto text-white relative">
+                    <Link href="/" onMouseEnter={()=>setSpn("spn1")} onMouseLeave={()=>setSpn("spn2")} className=" absolute top-0 xl:top-28 right-5 cursor-pointer">
+                        <svg className={`${spn} hidden xl:block`} width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54 54L1 1M1 54L54 1" stroke="white"/>
+                        </svg>
+                        <svg className={`${spn} xl:hidden font-bold`} width="44" height="44" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54 54L1 1M1 54L54 1" stroke="white"/>
                         </svg>
                     </Link>
-                    <div className=" w-full h-full flex gap-10">
-                        <div className=" w-[350px] h-full flex flex-col ">
+                    <div className=" w-full h-full flex flex-col xl:flex-row gap-6 xl:gap-10">
+                        <div className=" xl:w-[350px] h-full flex flex-col ">
                             <div>
-                                <span className=" text-[60px] font-bold">Contact us</span>
-                                <span className=" text-[34px]">Fill the form</span>
+                                <span className=" text-[35px] md:text-[50px] xl:text-[60px] font-bold">Contact us </span>
+                                <span className=" text-[20px] md:text-[26px] xl:text-[34px]"> Fill the form</span>
                             </div>
-                            <div className=" text-[20px]">And we will get back to you as soon as we can</div>
+                            <div className=" text-[18px] xl:text-[20px] text-slate-300">And we will get back to you as soon as we can</div>
                         </div>
-                        <div className=" w-full h-full flex flex-col gap-10">
+                        <div className=" w-full h-full flex flex-col gap-6 xl:gap-10">
                             <div className=" flex flex-col">
-                                <label className=" text-[26px]" htmlFor="company">Name of your company*</label>
-                                <input className=" w-full h-10 text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="company" placeholder="Enter your company name" id="company" />
+                                <label className=" text-[20px] xl:text-[26px]" htmlFor="company">Name of your company*</label>
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="company" placeholder="Enter your company name" id="company" />
                             </div>
                             <div className=" flex flex-col">
-                                <label className=" text-[26px]" htmlFor="email">Email*</label>
-                                <input className=" w-full h-10 text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="email" name="email" placeholder="Enter your email" id="email" />
+                                <label className=" text-[20px] xl:text-[26px]" htmlFor="email">Email*</label>
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="email" name="email" placeholder="Enter your email" id="email" />
                             </div>
                             <div className=" flex flex-col relative">
                                 <div onClick={set} className=" text-[20px] flex items-center cursor-pointer">
@@ -73,15 +76,15 @@ function About(){
                                 </div>
                             </div>
                             <div className=" flex flex-col">
-                                <label className=" text-[26px]" htmlFor="message">You message</label>
-                                <input className=" w-full h-10 text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="message" placeholder="Enter your message" id="message" />
+                                <label className=" text-[20px] xl:text-[26px]" htmlFor="message">You message</label>
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="message" placeholder="Enter your message" id="message" />
                             </div>
                             <div>
                                 <button href="/contact-us" onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-6 float-right">
-                                    <div className="h-16 overflow-hidden">
+                                    <div className=" h-8 xl:h-16 overflow-hidden">
                                         <div className={` flex flex-col ${up}`}>
-                                        <span className=" text-[40px] font-thin text-white">Send </span>
-                                        <span className=" text-[40px] font-thin text-white">Send </span>
+                                        <span className=" text-[24px] xl:text-[40px] font-thin text-white">Send </span>
+                                        <span className=" text-[24px] xl:text-[40px] font-thin text-white">Send </span>
                                         </div>
                                     </div>
                                     <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
