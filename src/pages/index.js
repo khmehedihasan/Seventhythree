@@ -243,7 +243,7 @@ function prev(){
             <div className=" w-[700px]  xl:w-[1280px] mx-auto overflow-hidden">
               <div className={`w-[4200px] ${slide}`}>
                 {/* //----------- */}
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
+                <div className=" w-[700px] xl:w-[965px] h-[650px] xl:h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                   <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
                   <div className=" flex gap-4">
@@ -264,7 +264,7 @@ function prev(){
                 </div>
 
                 {/* //--------------- */}
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
+                <div className=" w-[700px] xl:w-[965px] h-[650px] xl:h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                     <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Crypto-Asset Management</div>
                     <div className=" flex gap-4">
@@ -285,7 +285,7 @@ function prev(){
                 </div>
 
                 {/* //------------ */}
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
+                <div className=" w-[700px] xl:w-[965px] h-[650px] xl:h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                     <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
                     <div className=" flex gap-4">
