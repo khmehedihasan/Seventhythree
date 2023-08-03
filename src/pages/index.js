@@ -222,7 +222,7 @@ function prev(){
         {/* //--------------------------------------- Service start------------------------------------------ */}
         <div className=" w-full h-full py-[100px] bg4 bg-cover bg-right">
           <div className=" w-[700px] xl:w-[1280px] mx-auto flex flex-col xl:flex-row">
-            //-----0--------
+            {/* //-----0-------- */}
             <div className=" hidden w-[420px] h-[810px] border border-slate-400 xl:flex flex-col">
               <div onClick={nxt} onMouseLeave={()=>setBtn1("btn1out")} onMouseEnter={()=>setBtn1("btn1in")} className=" h-[420px] cursor-pointer flex items-center justify-center relative overflow-hidden">
                 <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,73 +239,93 @@ function prev(){
               </div>
               <div className={` ${bar} h-5 bg-white`}></div>
             </div>
-            //-------0---------
+            {/* //-------0--------- */}
             <div className=" w-[700px]  xl:w-[1280px] mx-auto overflow-hidden">
               <div className={`w-[4200px] ${slide}`}>
-                //-----------
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                {/* //----------- */}
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                   <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
                   <div className=" flex gap-4">
                     <div className=" flex flex-col">
-                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
-                      <div className=" text-[18px] xl:text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
+                      <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                      <div className=" text-[16px] xl:text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
                     </div>
                     <div>
-                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Funding and Capital Injection</div>
-                      <div className=" text-[18px] xl:text-[20px]">We provide capital and financial support to selected projects, helping them scale their operations, develop innovative solutions, and reach their full potential</div>
+                      <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Funding and Capital Injection</div>
+                      <div className=" text-[16px] xl:text-[20px]">We provide capital and financial support to selected projects, helping them scale their operations, develop innovative solutions, and reach their full potential</div>
                     </div>
                     <div>
-                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Strategic Partnerships</div>
-                      <div className=" text-[18px] xl:text-[20px]">We leverage our extensive network to forge strategic partnerships, connecting entrepreneurs with industry leaders, advisors, and resources to accelerate their growth</div>
+                      <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Strategic Partnerships</div>
+                      <div className=" text-[16px] xl:text-[20px]">We leverage our extensive network to forge strategic partnerships, connecting entrepreneurs with industry leaders, advisors, and resources to accelerate their growth</div>
                     </div>
                   </div>
                   <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
 
-                //---------------
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                {/* //--------------- */}
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                     <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Crypto-Asset Management</div>
                     <div className=" flex gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
-                        <div className=" text-[18px] xl:text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                        <div className=" text-[16px] xl:text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Risk Assessment and Compliance</div>
-                        <div className=" text-[18px] xl:text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Risk Assessment and Compliance</div>
+                        <div className=" text-[16px] xl:text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Market Analysis and Insights</div>
-                        <div className=" text-[18px] xl:text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Market Analysis and Insights</div>
+                        <div className=" text-[16px] xl:text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
                       </div>
                     </div>
                     <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
 
-                //------------
-                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                {/* //------------ */}
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
                   <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
                     <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
                     <div className=" flex gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Liquidity Provision </div>
-                        <div className=" text-[18px] xl:text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Liquidity Provision </div>
+                        <div className=" text-[16px] xl:text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Order Book Management</div>
-                        <div className=" text-[18px] xl:text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Order Book Management</div>
+                        <div className=" text-[16px] xl:text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Trading Strategies and Execution</div>
-                        <div className=" text-[18px] xl:text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
+                        <div className=" h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Trading Strategies and Execution</div>
+                        <div className=" text-[16px] xl:text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
                       </div>
                     </div>
                     <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
               </div>
             </div>
+            {/* ///------------------ */}
+            <div className=" xl:hidden w-[700px] h-[120px] border border-slate-400 flex flex-col">
+              <div className=" w-[700px] h-[112px] flex">
+                <div onClick={nxt} onMouseLeave={()=>setBtn1("btn1out2")} onMouseEnter={()=>setBtn1("btn1in2")} className=" w-[350px] h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
+                  <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
+                  </svg>
+                  <div className={` w-full h-[120px] absolute top-0 left-0 btn1 ml-[350px] ${btn1}`}></div>
+                  <div className={` w-[30px] h-[30px] absolute top-2 left-2 text-white text-[20px]`}>0{count}</div>
+                </div>
+                <div onClick={prev} onMouseLeave={()=>setBtn2("btn2out2")} onMouseEnter={()=>setBtn2("btn2in2")} className=" w-[350px] h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
+                  <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
+                  </svg>
+                  <div className={` w-full h-[120px] absolute top-0 left-0 btn1 -ml-[350px] ${btn2}`}></div>
+                </div>
+              </div>
+              <div className={` ${bar} h-2 bg-white`}></div>
+            </div>
+            {/* ///--------------------------- */}
           </div>
         </div>
         {/* //--------------------------------------- Service end------------------------------------------ */}

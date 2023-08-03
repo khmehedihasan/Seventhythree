@@ -60,6 +60,7 @@ body {
 
 }
 
+
 .btn1in{
     margin-top: 0px;
 }
@@ -76,20 +77,60 @@ body {
     margin-top: -420px;
 }
 
-.slide1{
+    
+.btn1in2{
     margin-left: 0px;
-    transition: all ease-in .5s;
 }
 
-.slide2{
-    margin-left: -965px;
-    transition: all ease-in .5s;
+.btn1out2{
+    margin-left: 350px;
 }
 
-.slide3{
-    margin-left: -1930px;
-    transition: all ease-in .5s;
+.btn2in2{
+    margin-left: 0px;
 }
+
+.btn2out2{
+    margin-left: -350px;
+}
+
+@media (min-width: 768px) {
+
+    .slide1{
+        margin-left: 0px;
+        transition: all ease-in .5s;
+    }
+
+    .slide2{
+        margin-left: -700px;
+        transition: all ease-in .5s;
+    }
+
+    .slide3{
+        margin-left: -1400px;
+        transition: all ease-in .5s;
+    }
+}
+
+
+@media (min-width: 1280px) {
+
+    .slide1{
+        margin-left: 0px;
+        transition: all ease-in .5s;
+    }
+
+    .slide2{
+        margin-left: -965px;
+        transition: all ease-in .5s;
+    }
+
+    .slide3{
+        margin-left: -1930px;
+        transition: all ease-in .5s;
+    }
+}
+
 
 .bar1{
     width: 33.33%;
