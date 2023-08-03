@@ -16,8 +16,8 @@ function About(){
     }
 
     return(
-        <div className=' mx-auto'>
-            <div className=" w-full h-screen  flex flex-col items-center justify-center bg4 bg-cover bg-center">
+        <div className=' h-screen mx-auto'>
+            <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg4 bg-cover bg-center">
                 <nav className=" w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
                     <div className=" ">
                         <svg width="99" height="35" viewBox="0 0 99 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +30,8 @@ function About(){
                         <button className=" text-[24px] text-slate-300 hover:text-white" >Team</button>
                     </div>
                 </nav>
-                <div className=" w-[1280px] h-[700px] py-[250px] mx-auto text-white relative">
-                    <Link href="/" onMouseEnter={()=>setSpn("spn1")} onMouseLeave={()=>setSpn("spn2")} className=" absolute top-36 right-5 cursor-pointer">
+                <div className=" w-[1280px] h-[700px] py-[200px] mx-auto text-white relative">
+                    <Link href="/" onMouseEnter={()=>setSpn("spn1")} onMouseLeave={()=>setSpn("spn2")} className=" absolute top-28 right-5 cursor-pointer">
                         <svg className={`${spn}`} width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54 54L1 1M1 54L54 1" stroke="white"/>
                         </svg>

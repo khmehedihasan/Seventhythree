@@ -67,7 +67,7 @@ function prev(){
         <div className=' mx-auto'>
           <div className=" w-full h-screen  flex flex-col items-center justify-center bg-[url('../images/video.gif')] bg2 bg-cover bg-center">
 
-            <nav className=" w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
+            <nav className=" md:w-[700px] xl:w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
               <div className=" ">
                 <svg width="99" height="35" viewBox="0 0 99 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M99 8.60789V0H0V8.60789H49.5L26.302 35H99V26.3921L45.6609 26.2297L49.5 21.9258H99V13.1555H57.1782L61.1807 8.60789H99Z" fill="white"/>
@@ -81,8 +81,8 @@ function prev(){
             </nav>
 
 
-            <h1 className=" text-[130px] font-thin text-white">Seventhythree</h1>
-            <h3 className=" text-[24px] mt-2 font-thin text-white">Venture Capital Specializing in Web3, Blockchain, and Crypto-Asset Management</h3>
+            <h1 className=" text-[90px] xl:text-[130px] font-thin text-white">Seventhythree</h1>
+            <h3 className=" w-[60%] xl:w-full text-center text-[24px] mt-2 font-thin text-white">Venture Capital Specializing in Web3, Blockchain, and Crypto-Asset Management</h3>
             <Link href="/contact-us" onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-16">
               <div className="h-16 overflow-hidden">
                 <div className={` flex flex-col ${up}`}>
@@ -101,8 +101,8 @@ function prev(){
 
         {/* //--------------------------------------- about start------------------------------------------ */}
         <div className=" py-[100px]  bg1 bg-right">
-          <div className=" w-[1280px] mx-auto flex flex-col gap-4 text-[24px] text-slate-200">
-            <div className=" flex gap-4 justify-between">
+          <div className=" md:w-[700px] xl:w-[1280px] mx-auto flex flex-col gap-4 text-[24px] text-slate-200">
+            <div className=" flex flex-col-reverse xl:flex-row gap-4 items-end xl:justify-between">
               <div>
                 Welcome to Seventhythree, a <span className=" text-white font-extrabold">leading</span> venture capital firm specializing in investment services for web and blockchain projects, as well as offering crypto-asset management services for professional and institutional investors, and market-making services for tokens and CEX exchanges
               </div>
@@ -110,7 +110,7 @@ function prev(){
                 <span>About Us</span>
               </div>
             </div>
-            <div className=" flex gap-4">
+            <div className=" flex flex-col xl:flex-row gap-4">
               <div className=" flex gap-4">
                 <div>At Seventhythree, we are passionate about leveraging the power of technology to drive innovation and growth in the digital space. With our <span className=" text-white font-extrabold">deep expertise</span> in blockchain technology and a keen eye for promising investment opportunities, <span className=" text-white font-extrabold">we strive</span> to connect visionary entrepreneurs with the capital they need to bring their projects to life.</div>
 
@@ -139,76 +139,76 @@ function prev(){
 
 
         <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
-          <div className=" w-[1280px] mx-auto">
+          <div className=" w-[700px] xl:w-[1280px] mx-auto">
             <h1 className=" text-center text-white text-[60px] font-bold">Team</h1>
             <ScrollingCarousel>
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Andrea Santini</h2>
-                <h3 className=" text-center text-white text-[30px]">Ceo, Founder and Analyst</h3>
-                <h4 className=" text-center text-white text-[20px]">He has extensive experience in financial market analysis</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Andrea Santini</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">He has extensive experience in financial market analysis</h4>
               </div>
 
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Marco Di Maggio</h2>
-                <h3 className=" text-center text-white text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
-                <h4 className=" text-center text-white text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Marco Di Maggio</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
               </div>
 
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative ">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Lucrezia Menoncello</h2>
-                <h3 className=" text-center text-white text-[30px]">Blockchain investment strategy manager</h3>
-                <h4 className=" text-center text-white text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Lucrezia Menoncello</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
               </div>
 
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Michele Miglio</h2>
-                <h3 className=" text-center text-white text-[30px]">Head of Growth</h3>
-                <h4 className=" text-center text-white text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Michele Miglio</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Head of Growth</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
               </div>
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Matteo Arnaboldi</h2>
-                <h3 className=" text-center text-white text-[30px]">CMO</h3>
-                <h4 className=" text-center text-white text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Matteo Arnaboldi</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">CMO</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
               </div>
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative ">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Omar Malik</h2>
-                <h3 className=" text-center text-white text-[30px]">Creative Director</h3>
-                <h4 className=" text-center text-white text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Omar Malik</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Creative Director</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
               </div>
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Tommaso Macchi</h2>
-                <h3 className=" text-center text-white text-[30px]">Analyst and Startup Selection Manager</h3>
-                <h4 className=" text-center text-white text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Tommaso Macchi</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
               </div>
 
-              <div className=" w-[700px] h-[700px] px-20 flex flex-col gap-7 items-center justify-center">
-                <div className=" w-[350px] h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
-                  <div className=" w-[100px] h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+              <div className=" w-[380px] xl:w-[700px] h-[700px] px-12 xl:px-20 flex flex-col gap-7 items-center mt-14 xl:mt-28">
+                <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
+                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[40px] font-bold">Ingan</h2>
-                <h3 className=" text-center text-white text-[30px]">Artificial Intelligence</h3>
-                <h4 className=" text-center text-white text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
+                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Ingan</h2>
+                <h3 className=" text-center text-white text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
+                <h4 className=" text-center text-white text-[18px] xl:text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
               </div>
               
 
@@ -219,10 +219,11 @@ function prev(){
 
         {/* //--------------------------------------- Team end------------------------------------------ */}
 
-        {/* //--------------------------------------- Service end------------------------------------------ */}
+        {/* //--------------------------------------- Service start------------------------------------------ */}
         <div className=" w-full h-full py-[100px] bg4 bg-cover bg-right">
-          <div className=" w-[1280px] mx-auto flex">
-            <div className=" w-[420px] h-[810px] border border-slate-400 flex flex-col">
+          <div className=" w-[700px] xl:w-[1280px] mx-auto flex flex-col xl:flex-row">
+            //-----0--------
+            <div className=" hidden w-[420px] h-[810px] border border-slate-400 xl:flex flex-col">
               <div onClick={nxt} onMouseLeave={()=>setBtn1("btn1out")} onMouseEnter={()=>setBtn1("btn1in")} className=" h-[420px] cursor-pointer flex items-center justify-center relative overflow-hidden">
                 <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
@@ -238,69 +239,70 @@ function prev(){
               </div>
               <div className={` ${bar} h-5 bg-white`}></div>
             </div>
-            <div className="  w-[1280px] overflow-hidden">
+            //-------0---------
+            <div className=" w-[700px]  xl:w-[1280px] mx-auto overflow-hidden">
               <div className={`w-[4200px] ${slide}`}>
                 //-----------
-                <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
-                  <div className=" text-[80px] font-bold">Service</div>
-                  <div className=" w-[50%] text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                  <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
+                  <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
                   <div className=" flex gap-4">
                     <div className=" flex flex-col">
-                      <div className=" h-[120px] text-[28px]">Project Evaluation </div>
-                      <div className=" text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
+                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                      <div className=" text-[18px] xl:text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
                     </div>
                     <div>
-                      <div className=" h-[120px] text-[28px]">Funding and Capital Injection</div>
-                      <div className=" text-[20px]">We provide capital and financial support to selected projects, helping them scale their operations, develop innovative solutions, and reach their full potential</div>
+                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Funding and Capital Injection</div>
+                      <div className=" text-[18px] xl:text-[20px]">We provide capital and financial support to selected projects, helping them scale their operations, develop innovative solutions, and reach their full potential</div>
                     </div>
                     <div>
-                      <div className=" h-[120px] text-[28px]">Strategic Partnerships</div>
-                      <div className=" text-[20px]">We leverage our extensive network to forge strategic partnerships, connecting entrepreneurs with industry leaders, advisors, and resources to accelerate their growth</div>
+                      <div className=" h-[120px] text-[22px] xl:text-[28px]">Strategic Partnerships</div>
+                      <div className=" text-[18px] xl:text-[20px]">We leverage our extensive network to forge strategic partnerships, connecting entrepreneurs with industry leaders, advisors, and resources to accelerate their growth</div>
                     </div>
                   </div>
-                  <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
+                  <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
 
                 //---------------
-                <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
-                  <div className=" text-[80px] font-bold">Service</div>
-                    <div className=" w-[50%] text-[34px] font-bold">Crypto-Asset Management</div>
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                  <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
+                    <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Crypto-Asset Management</div>
                     <div className=" flex gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[120px] text-[28px]">Project Evaluation </div>
-                        <div className=" text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                        <div className=" text-[18px] xl:text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[28px]">Risk Assessment and Compliance</div>
-                        <div className=" text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Risk Assessment and Compliance</div>
+                        <div className=" text-[18px] xl:text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[28px]">Market Analysis and Insights</div>
-                        <div className=" text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Market Analysis and Insights</div>
+                        <div className=" text-[18px] xl:text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
                       </div>
                     </div>
-                    <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
+                    <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
 
                 //------------
-                <div className=" w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
-                  <div className=" text-[80px] font-bold">Service</div>
-                    <div className=" w-[50%] text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
+                <div className=" w-[700px] xl:w-[965px] h-[810px] float-left text-white py-10 px-4 flex flex-col gap-10">
+                  <div className=" text-[60px] xl:text-[80px] font-bold">Service</div>
+                    <div className=" w-[60%] xl:w-[50%] text-[26px] xl:text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
                     <div className=" flex gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[120px] text-[28px]">Liquidity Provision </div>
-                        <div className=" text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Liquidity Provision </div>
+                        <div className=" text-[18px] xl:text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[28px]">Order Book Management</div>
-                        <div className=" text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Order Book Management</div>
+                        <div className=" text-[18px] xl:text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
                       </div>
                       <div>
-                        <div className=" h-[120px] text-[28px]">Trading Strategies and Execution</div>
-                        <div className=" text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
+                        <div className=" h-[120px] text-[22px] xl:text-[28px]">Trading Strategies and Execution</div>
+                        <div className=" text-[18px] xl:text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
                       </div>
                     </div>
-                    <div className=" text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
+                    <div className=" text-[18px] xl:text-[20px]">These services encompass our commitment to unlocking the potential of web and blockchain projects, supporting investors with their crypto-asset management needs, and providing liquidity and market-making solutions to token issuers and exchanges</div>
                 </div>
               </div>
             </div>
