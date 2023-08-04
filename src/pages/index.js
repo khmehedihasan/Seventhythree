@@ -355,19 +355,19 @@ function prev(){
         </div>
 
         <div className=" xl:hidden w-full h-[130px] xl:h-[90px] px-4 xl:px-0 bg4 bg-right bg-cover text-white">
-          <div className=" flex flex-col xl:flex-row items-center justify-evenly">
+          <div className=" flex flex-col xl:flex-row gap-4 md:gap-0 items-center justify-evenly">
             <div className=" hidden xl:block">office@73capital.xyz</div>
             <div className=" flex gap-4">
-                <Image src={logo1} alt="" />
-                <Image src={logo2} alt="" />
-                <Image src={logo3} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo1} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo2} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo3} alt="" />
             </div>
-            <div className=" w-full h-full flex items-center justify-between">
+            <div className=" w-full h-full flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
               <div className=" flex gap-4">
-                <Image src={logo4} alt="" />
-                <Image src={logo5} alt="" />
-                <Image src={logo6} alt="" />
-                <Image src={linkedin} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo4} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo5} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={logo6} alt="" />
+                <Image className=" h-[30px] md:h-auto" src={linkedin} alt="" />
               </div>
               <div className=" xl:hidden">office@73capital.xyz</div>
             </div>

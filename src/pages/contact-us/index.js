@@ -5,6 +5,7 @@ function About(){
     const [invest, setInvest] = useState("Invest with Seventhythree");
     const [show, setShow] = useState("hide");
     const [up, setUp] = useState("");
+    const [up2, setUp2] = useState("");
     const [spn, setSpn] = useState("");
 
     function set(){
@@ -94,6 +95,20 @@ function About(){
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className=" w-[300px] xl:w-[450px] h-[220px] xl:h-[300px] bg3 absolute top-[35%] text-white flex flex-col items-center justify-center">
+                    <div className=" text-[20px] xl:text-[28px]">Form submitted successfully</div >
+                    <Link href="/" onMouseLeave={()=>setUp2("down")} onMouseEnter={()=>setUp2("up")} className=" h-16  flex gap-3 items-center justify-center mt-6 float-right">
+                        <div className=" h-8 xl:h-16 overflow-hidden">
+                            <div className={` flex flex-col ${up2}`}>
+                            <span className=" text-[24px] xl:text-[40px] font-thin text-white">Come back </span>
+                            <span className=" text-[24px] xl:text-[40px] font-thin text-white">Come back </span>
+                            </div>
+                        </div>
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35 6L25 0.226497V11.7735L35 6ZM0 7H26V5H0V7Z" fill="white"/>
+                        </svg>
+                    </Link>
                 </div>
             </div>
           </div>
