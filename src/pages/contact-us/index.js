@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from 'next/head';
 import { useState } from "react";
 
 function About(){
@@ -7,6 +8,27 @@ function About(){
     const [up, setUp] = useState("");
     const [up2, setUp2] = useState("");
     const [spn, setSpn] = useState("");
+
+    const [popup, setPopup] = useState("hide")
+
+    const [company, setCompany] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    function send(){
+
+        const data = {company, email, invest, message};
+        console.log(data)
+
+        fetch('http://ec2-16-171-173-71.eu-north-1.compute.amazonaws.com:5000', {headers: {'Content-Type': 'application/json'},method:'POST', body: JSON.stringify(data)}).then((data)=>data.json()).then(data=>{
+            if(data){
+                if(data.status === true){
+                    setPopup("flex")
+                }
+            }
+        })
+
+    }
 
     function set(){
         if(show == "show"){
@@ -17,6 +39,13 @@ function About(){
     }
 
     return(
+        <>
+        <Head>
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet"></link>
+      </Head>
         <div className=' h-full xl:h-screen mx-auto'>
             <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg4 bg-cover bg-center">
                 <nav className=" w-[300px] md:w-[700px] xl:w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
@@ -51,11 +80,11 @@ function About(){
                         <div className=" w-full h-full flex flex-col gap-6 xl:gap-10">
                             <div className=" flex flex-col">
                                 <label className=" text-[20px] xl:text-[26px]" htmlFor="company">Name of your company*</label>
-                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="company" placeholder="Enter your company name" id="company" />
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" onChange={(e)=>setCompany(e.target.value)} type="text" name="company" value={company} placeholder="Enter your company name" id="company" />
                             </div>
                             <div className=" flex flex-col">
                                 <label className=" text-[20px] xl:text-[26px]" htmlFor="email">Email*</label>
-                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="email" name="email" placeholder="Enter your email" id="email" />
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" onChange={(e)=>setEmail(e.target.value)} type="email" name="email" value={email} placeholder="Enter your email" id="email" />
                             </div>
                             <div className=" flex flex-col relative">
                                 <div onClick={set} className=" text-[20px] flex items-center cursor-pointer">
@@ -78,10 +107,10 @@ function About(){
                             </div>
                             <div className=" flex flex-col">
                                 <label className=" text-[20px] xl:text-[26px]" htmlFor="message">You message</label>
-                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" type="text" name="message" placeholder="Enter your message" id="message" />
+                                <input className=" w-full h-10 text-[18px] md:text-[20px] text-slate-400 placeholder:text-slate-400 border-b-2 border-slate-50 outline-none bg-transparent" onChange={(e)=>setMessage(e.target.value)} type="text" name="message" value={message} placeholder="Enter your message" id="message" />
                             </div>
                             <div>
-                                <button href="/contact-us" onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-6 float-right">
+                                <button onClick={send} onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-6 float-right">
                                     <div className=" h-8 xl:h-16 overflow-hidden">
                                         <div className={` flex flex-col ${up}`}>
                                         <span className=" text-[24px] xl:text-[40px] font-thin text-white">Send </span>
@@ -96,7 +125,7 @@ function About(){
                         </div>
                     </div>
                 </div>
-                <div className=" w-[300px] xl:w-[450px] h-[220px] xl:h-[300px] bg3 absolute top-[35%] text-white flex flex-col items-center justify-center">
+                <div className={`${popup} w-[300px] xl:w-[450px] h-[220px] xl:h-[300px] bg3 absolute top-[35%] text-white flex flex-col items-center justify-center`}>
                     <div className=" text-[20px] xl:text-[28px]">Form submitted successfully</div >
                     <Link href="/" onMouseLeave={()=>setUp2("down")} onMouseEnter={()=>setUp2("up")} className=" h-16  flex gap-3 items-center justify-center mt-6 float-right">
                         <div className=" h-8 xl:h-16 overflow-hidden">
@@ -112,7 +141,7 @@ function About(){
                 </div>
             </div>
           </div>
-    )
+    </>)
 }
 
 export default About;
