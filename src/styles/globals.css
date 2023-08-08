@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Oxanium', cursive;
     background-image: url('../images/bgdotted.jpg');

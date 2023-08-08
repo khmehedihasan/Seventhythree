@@ -74,9 +74,9 @@ function prev(){
                 </svg>
               </div>
               <div className=" xl:w-[250px] flex justify-between gap-2">
-                <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</button>
-                <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</button>
-                <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</button>
+                <Link href="#about" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</Link>
+                <Link href="#service" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</Link>
+                <Link href="#team" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</Link>
               </div>
             </nav>
 
@@ -100,7 +100,7 @@ function prev(){
         {/* //--------------------------------------- home end------------------------------------------ */}
 
         {/* //--------------------------------------- about start------------------------------------------ */}
-        <div className=" py-[100px]  bg1 bg-right">
+        <div id="about" className=" py-[100px]  bg1 bg-right">
           <div className=" md:w-[700px] xl:w-[1280px] mx-auto flex flex-col gap-4 p-4 md:p-0 text-[18px] md:text-[24px] text-slate-200">
             <div className=" flex flex-col-reverse xl:flex-row gap-4 items-end xl:justify-between">
               <div>
@@ -138,7 +138,7 @@ function prev(){
         {/* //--------------------------------------- Team end------------------------------------------ */}
 
 
-        <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
+        <div id="team" className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
           <div className=" w-[300px] md:w-[700px] xl:w-[1280px] mx-auto">
             <h1 className=" text-center text-white text-[50px] md:text-[60px] font-bold">Team</h1>
             <ScrollingCarousel >
@@ -220,7 +220,7 @@ function prev(){
         {/* //--------------------------------------- Team end------------------------------------------ */}
 
         {/* //--------------------------------------- Service start------------------------------------------ */}
-        <div className=" w-full h-full py-[100px] bg4 bg-cover bg-right">
+        <div id="service" className=" w-full h-full py-[100px] bg4 bg-cover bg-right">
           <div className=" w-[300px] md:w-[700px] xl:w-[1280px] mx-auto flex flex-col xl:flex-row">
             {/* //-----0-------- */}
             <div className=" hidden w-[420px] h-[810px] border border-slate-400 xl:flex flex-col">
@@ -374,6 +374,16 @@ function prev(){
           </div>
         </div>
         {/* //--------------------------------------- Service end------------------------------------------ */}
+        <div className="  bg-black px-4 ">
+          <div className=" mx-auto md:w-[700px] xl:w-[1280px]  flex items-center bg-black justify-between text-white py-3">
+                <div className=" xl:w-[250px] flex justify-between gap-2">
+                  <Link href="#about" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</Link>
+                  <Link href="#service" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</Link>
+                  <Link href="#team" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</Link>
+                </div>
+              <a href="https://www.iubenda.com/privacy-policy/56149882" class="text-[18px] md:text-[24px] text-slate-300 hover:text-white iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a>
+          </div>
+        </div>
       </div>
     </>
   )
