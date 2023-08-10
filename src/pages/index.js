@@ -81,7 +81,7 @@ function prev(){
             </nav>
 
 
-            <h1 className=" text-[50px] md:text-[90px] xl:text-[130px] font-thin text-white">Seventhythree</h1>
+            <h1 className=" text-[45px] md:text-[90px] xl:text-[130px] font-thin text-white">Seventhythree</h1>
             <h3 className=" w-[80%] md:w-[60%] xl:w-full text-center text-[18px] md:text-[24px] mt-2 font-thin text-white">Venture Capital Specializing in Web3, Blockchain, and Crypto-Asset Management</h3>
             <Link href="/contact-us" onMouseLeave={()=>setUp("down")} onMouseEnter={()=>setUp("up")} className=" h-16  flex gap-3 items-center justify-center mt-8 md:mt-16">
               <div className=" h-9 md:h-16 overflow-hidden">
@@ -106,7 +106,7 @@ function prev(){
               <div>
                 Welcome to Seventhythree, a <span className=" text-white font-extrabold">leading</span> venture capital firm specializing in investment services for web and blockchain projects, as well as offering crypto-asset management services for professional and institutional investors, and market-making services for tokens and CEX exchanges
               </div>
-              <div className=" w-[250px] shrink-0 text-[40px] md:text-[60px] text-white font-bold">
+              <div className=" xl:w-[250px] shrink-0 text-[40px] md:text-[60px] text-white font-bold">
                 <span>About Us</span>
               </div>
             </div>
@@ -138,76 +138,88 @@ function prev(){
         {/* //--------------------------------------- Team end------------------------------------------ */}
 
 
-        <div id="team" className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg3 bg-cover bg-left">
+        <div id="team" className=" w-full h-full py-[100px] hidden md:flex flex-col items-center justify-center bg3 bg-cover bg-left">
           <div className=" w-[300px] md:w-[700px] xl:w-[1280px] mx-auto">
             <h1 className=" text-center text-white text-[50px] md:text-[60px] font-bold">Team</h1>
             <ScrollingCarousel >
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/andrea-santini-63892b19b/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Andrea Santini</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Andrea Santini</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He has extensive experience in financial market analysis</h4>
               </div>
 
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/marco-d-6724b135/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Marco Di Maggio</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Marco Di Maggio</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
               </div>
 
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/lucrezia-menoncello-054846103/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Lucrezia Menoncello</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Lucrezia Menoncello</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
               </div>
 
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/michele-miglio-6438a99a/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Michele Miglio</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Head of Growth</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Michele Miglio</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Head of Growth</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
               </div>
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Matteo Arnaboldi</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">CMO</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Matteo Arnaboldi</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">CMO</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
               </div>
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/omar-malik-direttore-creativo/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Omar Malik</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Creative Director</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Omar Malik</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Creative Director</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
               </div>
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
-                  <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  <Link target="_blank" href="https://www.linkedin.com/in/tommaso-macchi-681b00154/">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </Link>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Tommaso Macchi</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Tommaso Macchi</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
               </div>
 
-              <div className=" w-[300px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+              <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
                 <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
                   <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
                 </div>
-                <h2 className=" text-center text-white text-[30px] xl:text-[40px] font-bold">Ingan</h2>
-                <h3 className=" text-center text-white text-[20px] md:text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
+                <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Ingan</h2>
+                <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
                 <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
               </div>
               
@@ -218,6 +230,113 @@ function prev(){
         </div>
 
         {/* //--------------------------------------- Team end------------------------------------------ */}
+
+                {/* //--------------------------------------- Team mobile end------------------------------------------ */}
+
+
+        <div id="team" className=" w-full h-full py-[100px] md:hidden flex flex-col items-center justify-center bg3 bg-cover bg-left">
+          <div className=" w-[300px] md:w-[700px] xl:w-[1280px] mx-auto">
+            <h1 className=" text-center text-white text-[40px] md:text-[60px] font-bold">Team</h1>
+            <ScrollingCarousel >
+
+              <div>
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person1.jpg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/andrea-santini-63892b19b/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Andrea Santini</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Ceo, Founder and Analyst</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He has extensive experience in financial market analysis</h4>
+                </div>
+
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person2.jpg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/marco-d-6724b135/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Marco Di Maggio</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Chief Blockchain and Fintech, Crypto and Web3 laboratory at Harward</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">He is the Director of the Fintech, Crypto and Web3 laboratory at Harvard</h4>
+                </div>
+              </div>
+
+              <div>
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person3.jpeg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/lucrezia-menoncello-054846103/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Lucrezia Menoncello</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Blockchain investment strategy manager</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Investment strategy in Bitpanda Forbes under30</h4>
+                </div>
+
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person4.jpg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/michele-miglio-6438a99a/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Michele Miglio</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Head of Growth</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO Yggdrisil Capital Trust Data analisys Green techanalisys</h4>
+                </div>
+              </div>
+
+              <div>
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person5.jpg')] bg-cover relative">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Matteo Arnaboldi</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">CMO</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Marketing Consultant Expert in AI and Prompts</h4>
+                </div>
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person6.jpeg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/omar-malik-direttore-creativo/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Omar Malik</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Creative Director</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">CEO of Ciambelle Digital CEO of Moverai</h4>
+                </div>
+              </div>
+
+
+              <div>
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person7.jpg')] bg-cover relative">
+                    <Link target="_blank" href="https://www.linkedin.com/in/tommaso-macchi-681b00154/">
+                      <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                    </Link>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Tommaso Macchi</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Analyst and Startup Selection Manager</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Project Analyst Freelance Project Analyst Carboneble Business Consultant in AceAnalysis</h4>
+                </div>
+
+                <div className=" w-[300px] md:w-[350px] xl:w-[700px] h-[500px] md:h-[700px] px-12 xl:px-20 flex flex-col gap-4 md:gap-7 items-center mt-14 xl:mt-28">
+                  <div className=" w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] bg-[url('../images/person8.jpg')] bg-cover relative">
+                    <div className=" w-[60px] h-[12px] xl:w-[100px] xl:h-[20px] absolute bottom-[2px] right-0 bg-[url('../images/linkedin.png')] bg-cover "></div>
+                  </div>
+                  <h2 className=" text-center text-white text-[24px] md:text-[30px] xl:text-[40px] font-bold">Ingan</h2>
+                  <h3 className=" text-center text-white text-[16px] md:text-[22px] xl:text-[30px]">Artificial Intelligence</h3>
+                  <h4 className=" text-center text-white text-[14px] md:text-[18px] xl:text-[20px]">Artificial intelligence for project and volumetric data analysis</h4>
+                </div>
+              </div>
+
+            </ScrollingCarousel>
+
+          </div>
+        </div>
+
+        {/* //--------------------------------------- Team mobile end------------------------------------------ */}
 
         {/* //--------------------------------------- Service start------------------------------------------ */}
         <div id="service" className=" w-full h-full py-[100px] bg4 bg-cover bg-right">
@@ -244,19 +363,19 @@ function prev(){
               <div className={`w-[4200px] ${slide}`}>
                 {/* //----------- */}
                 <div className=" w-[300px] md:w-[700px] xl:w-[965px] h-full md:h-[650px] xl:h-[810px] float-left text-white py-10 px-4 flex flex-col gap-4 xl:gap-10">
-                  <div className=" text-[50px] md:text-[60px] xl:text-[80px] font-bold">Service</div>
+                  <div className=" text-[40px] md:text-[60px] xl:text-[70px] font-bold">Service</div>
                   <div className=" w-[95%] my-5 md:my-0 md:w-[60%] xl:w-[50%] text-[20px] md:text-[26px] xl:text-[34px] font-bold">Investment Services for Web3 and Blockchain Projects</div>
                   <div className=" flex flex-col md:flex-row gap-10 md:gap-4">
                     <div className=" flex flex-col">
-                      <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                      <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Project Evaluation </div>
                       <div className=" text-[16px] xl:text-[20px]">Our team of experts conducts in-depth analysis and due diligence on web and blockchain projects, identifying investment opportunities with high growth potential</div>
                     </div>
                     <div>
-                      <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Funding and Capital Injection</div>
+                      <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Funding and Capital Injection</div>
                       <div className=" text-[16px] xl:text-[20px]">We provide capital and financial support to selected projects, helping them scale their operations, develop innovative solutions, and reach their full potential</div>
                     </div>
                     <div>
-                      <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Strategic Partnerships</div>
+                      <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Strategic Partnerships</div>
                       <div className=" text-[16px] xl:text-[20px]">We leverage our extensive network to forge strategic partnerships, connecting entrepreneurs with industry leaders, advisors, and resources to accelerate their growth</div>
                     </div>
                   </div>
@@ -269,15 +388,15 @@ function prev(){
                     <div className=" w-[95%] my-5 md:my-0 md:w-[60%] xl:w-[50%] text-[20px] md:text-[26px] xl:text-[34px] font-bold">Crypto-Asset Management</div>
                     <div className=" flex flex-col md:flex-row gap-10 md:gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Project Evaluation </div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Project Evaluation </div>
                         <div className=" text-[16px] xl:text-[20px]">We offer tailored investment strategies and portfolio management services for professional and institutional investors, maximizing returns while managing risks in the dynamic crypto-asset market</div>
                       </div>
                       <div>
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Risk Assessment and Compliance</div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Risk Assessment and Compliance</div>
                         <div className=" text-[16px] xl:text-[20px]">Our team employs rigorous risk assessment methodologies and ensures compliance with regulatory frameworks, safeguarding the investments of our clients</div>
                       </div>
                       <div>
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Market Analysis and Insights</div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Market Analysis and Insights</div>
                         <div className=" text-[16px] xl:text-[20px]">We provide comprehensive market analysis and insights on crypto-assets, helping investors make informed decisions and capitalize on emerging trends</div>
                       </div>
                     </div>
@@ -290,15 +409,15 @@ function prev(){
                     <div className=" w-[95%] my-5 md:my-0 md:w-[60%] xl:w-[50%] text-[20px] md:text-[26px] xl:text-[34px] font-bold">Market-Making Services for Tokens and CEX Exchanges</div>
                     <div className=" flex flex-col md:flex-row gap-10 md:gap-4">
                       <div className=" flex flex-col">
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Liquidity Provision </div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Liquidity Provision </div>
                         <div className=" text-[16px] xl:text-[20px]">We facilitate liquidity for tokens and CEX exchanges, ensuring smooth trading operations and minimizing market volatility</div>
                       </div>
                       <div>
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Order Book Management</div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Order Book Management</div>
                         <div className=" text-[16px] xl:text-[20px]">Our market-making services maintain efficient and balanced order books, enhancing market stability and optimizing trading opportunities</div>
                       </div>
                       <div>
-                        <div className=" h-[60px] md:h-[90px] xl:h-[120px] text-[22px] xl:text-[28px]">Trading Strategies and Execution</div>
+                        <div className=" h-[60px] md:h-[90px] text-[22px] xl:text-[28px]">Trading Strategies and Execution</div>
                         <div className=" text-[16px] xl:text-[20px]">We employ sophisticated trading strategies and advanced execution algorithms to provide competitive market-making services and maximize trading efficiency</div>
                       </div>
                     </div>
@@ -309,22 +428,22 @@ function prev(){
             {/* ///------------------ */}
             <div className=" xl:hidden w-[300px] md:w-[700px] h-[70px] md:h-[120px] border border-slate-400 flex flex-col">
               <div className=" w-[300px] md:w-[700px] h-[112px] flex">
-                <div onClick={nxt} onMouseLeave={()=>setBtn1("btn1out2")} onMouseEnter={()=>setBtn1("btn1in2")} className=" w-[150px] md:w-[350px] h-[60px] md:h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
+                <div onClick={prev}  onMouseLeave={()=>setBtn1("btn1out2")} onMouseEnter={()=>setBtn1("btn1in2")} className=" w-[150px] md:w-[350px] h-[60px] md:h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
                   <svg className=" hidden xl:block" width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
+                    <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
                   </svg>
                   <svg className=" xl:block" width="20" height="54" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
+                    <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
                   </svg>
                   <div className={` w-full h-[60px] md:h-[120px] absolute top-0 left-0 btn1 ml-[350px] ${btn1}`}></div>
                   <div className={` w-[30px] h-[30px] absolute top-2 left-2 text-white text-[12px] md:text-[20px]`}>0{count}</div>
                 </div>
-                <div onClick={prev} onMouseLeave={()=>setBtn2("btn2out2")} onMouseEnter={()=>setBtn2("btn2in2")} className=" w-[150px] md:w-[350px] h-[60px] md:h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
+                <div onClick={nxt} onMouseLeave={()=>setBtn2("btn2out2")} onMouseEnter={()=>setBtn2("btn2in2")} className=" w-[150px] md:w-[350px] h-[60px] md:h-[120px] cursor-pointer flex items-center justify-center relative overflow-hidden">
                   <svg className=" hidden xl:block" width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
+                    <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
                   </svg>
                   <svg className=" xl:block" width="20" height="54" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M39 73L2 38L39 1" stroke="white" strokeWidth="2"/>
+                    <path d="M1 1L38 36L1 73" stroke="white" strokeWidth="2"/>
                   </svg>
                   <div className={` w-full h-[60px] md:h-[120px] absolute top-0 left-0 btn1 -ml-[350px] ${btn2}`}></div>
                 </div>
@@ -340,50 +459,60 @@ function prev(){
         <div className=" hidden xl:block w-full h-[90px] bg4 bg-right bg-cover text-white">
           <div className=" flex items-center justify-evenly">
             <div>office@73capital.xyz</div>
-            <div className=" flex gap-4">
-                <Image src={logo1} alt="" />
-                <Image src={logo2} alt="" />
-                <Image src={logo3} alt="" />
+            <div className=" flex gap-8 items-center justify-center">
+                <Image className=" w-[100px] h-[50px]" src={logo1} alt="" />
+                <Image className=" w-[100px] h-[50px]" src={logo2} alt="" />
+                <Image className=" w-[65px] h-[60px]" src={logo3} alt="" />
             </div>
-            <div className=" flex gap-4">
-              <Image src={logo4} alt="" />
-              <Image src={logo5} alt="" />
-              <Image src={logo6} alt="" />
-              <Image src={linkedin} alt="" />
+            <div className=" flex gap-9 items-center justify-center">
+              <Link target="_blank" href="https://twitter.com/seventhythree">
+                <Image className=" w-[26px] h-[24px] " src={logo4} alt="" />
+              </Link>
+              <Image className=" w-[26px] h-[24px] " src={logo5} alt="" />
+              <Image className=" w-[100px] h-[15px] " src={logo6} alt="" />
+              <Image className=" w-[80px] h-[16px] " src={linkedin} alt="" />
             </div>
           </div>
         </div>
 
-        <div className=" xl:hidden w-full h-[130px] xl:h-[90px] px-4 xl:px-0 bg4 bg-right bg-cover text-white">
-          <div className=" flex flex-col xl:flex-row gap-4 md:gap-0 items-center justify-evenly">
-            <div className=" hidden xl:block">office@73capital.xyz</div>
-            <div className=" flex gap-4">
-                <Image className=" h-[30px] md:h-auto" src={logo1} alt="" />
-                <Image className=" h-[30px] md:h-auto" src={logo2} alt="" />
-                <Image className=" h-[30px] md:h-auto" src={logo3} alt="" />
-            </div>
-            <div className=" w-full h-full flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
-              <div className=" flex gap-4">
-                <Image className=" h-[30px] md:h-auto" src={logo4} alt="" />
-                <Image className=" h-[30px] md:h-auto" src={logo5} alt="" />
-                <Image className=" h-[30px] md:h-auto" src={logo6} alt="" />
-                <Image className=" h-[30px] md:h-auto" src={linkedin} alt="" />
+        <div className=" xl:hidden overflow-hidden w-full h-[170px] xl:h-[90px] text-white">
+          <div className=" h-[1200px] xl:h-[90px] px-4 xl:px-0 bg4 bg-right bg-cover bg-no-repeat text-white">
+            <div className=" flex flex-col xl:flex-row gap-8 md:gap-0 items-center justify-evenly">
+              <div className=" hidden xl:block">office@73capital.xyz</div>
+              <div className=" flex items-center gap-6">
+                  <Image className=" w-[80px] h-[40px] md:h-auto" src={logo1} alt="" />
+                  <Image className=" h-[40px] md:h-auto" src={logo2} alt="" />
+                  <Image className=" w-[45px] h-[40px] md:h-auto" src={logo3} alt="" />
               </div>
-              <div className=" xl:hidden">office@73capital.xyz</div>
+              <div className=" w-full h-full flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-between">
+                <div className=" flex items-center gap-5">
+                  <Link target="_blank" href="https://twitter.com/seventhythree">
+                    <Image className=" h-[25px] md:h-auto" src={logo4} alt="" />
+                  </Link>
+                  <Image className=" h-[25px] md:h-auto" src={logo5} alt="" />
+                  <Image className=" h-[16px] md:h-auto" src={logo6} alt="" />
+                  <Image className=" h-[18px] md:h-auto" src={linkedin} alt="" />
+                </div>
+                <div className=" xl:hidden">office@73capital.xyz</div>
+              </div>
             </div>
           </div>
+
         </div>
         {/* //--------------------------------------- Service end------------------------------------------ */}
-        <div className="  bg-black px-4 ">
+        {/* <div className="  bg-black px-4 ">
           <div className=" mx-auto md:w-[700px] xl:w-[1280px]  flex items-center bg-black justify-between text-white py-3">
                 <div className=" xl:w-[250px] flex justify-between gap-2">
                   <Link href="#about" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</Link>
                   <Link href="#service" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</Link>
                   <Link href="#team" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</Link>
+                </div> */}
+                <div className=" fixed bottom-[10px] right-[10px]">
+                     <a href="https://www.iubenda.com/privacy-policy/56149882" class="text-[18px] md:text-[24px] text-slate-300 hover:text-white iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a>
+
                 </div>
-              <a href="https://www.iubenda.com/privacy-policy/56149882" class="text-[18px] md:text-[24px] text-slate-300 hover:text-white iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a>
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
       </div>
     </>
   )

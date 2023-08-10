@@ -49,15 +49,15 @@ function About(){
         <div className=' h-full xl:h-screen mx-auto'>
             <div className=" w-full h-full py-[100px] flex flex-col items-center justify-center bg4 bg-cover bg-center">
                 <nav className=" w-[300px] md:w-[700px] xl:w-[1280PX] h-[80px] absolute top-0  flex items-center justify-between">
-                    <div className=" ">
+                    <Link href="/" className=" ">
                         <svg className=" w-20 md:w-40" width="99" height="35" viewBox="0 0 99 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M99 8.60789V0H0V8.60789H49.5L26.302 35H99V26.3921L45.6609 26.2297L49.5 21.9258H99V13.1555H57.1782L61.1807 8.60789H99Z" fill="white"/>
                         </svg>
-                    </div>
+                    </Link>
                     <div className=" xl:w-[250px] flex justify-between gap-2">
-                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</button>
-                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</button>
-                        <button className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</button>
+                        <Link href="/#about" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >About</Link>
+                        <Link href="/#service" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Service</Link>
+                        <Link href="/#team" className=" text-[18px] md:text-[24px] text-slate-300 hover:text-white" >Team</Link>
                     </div>
                 </nav>
                 <div className=" w-[300px] md:w-[700px] xl:w-[1280px] h-full xl:h-[700px] py-[60px] xl:py-[200px] mx-auto text-white relative">
