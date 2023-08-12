@@ -468,9 +468,13 @@ function prev(){
               <Link target="_blank" href="https://twitter.com/seventhythree">
                 <Image className=" w-[26px] h-[24px] " src={logo4} alt="" />
               </Link>
-              <Image className=" w-[26px] h-[24px] " src={logo5} alt="" />
+              <Link target="_blank" href="https://t.me/SeventhythreeCapital">
+                <Image className=" w-[26px] h-[24px] " src={logo5} alt="" />
+              </Link>
               <Image className=" w-[100px] h-[15px] " src={logo6} alt="" />
-              <Image className=" w-[80px] h-[16px] " src={linkedin} alt="" />
+              <Link target="_blank" href="https://www.linkedin.com/company/seventhythree/">
+                <Image className=" w-[80px] h-[16px] " src={linkedin} alt="" />
+              </Link>
             </div>
           </div>
         </div>
@@ -489,9 +493,13 @@ function prev(){
                   <Link target="_blank" href="https://twitter.com/seventhythree">
                     <Image className=" h-[25px] md:h-auto" src={logo4} alt="" />
                   </Link>
-                  <Image className=" h-[25px] md:h-auto" src={logo5} alt="" />
+                  <Link target="_blank" href="https://t.me/SeventhythreeCapital">
+                    <Image className=" h-[25px] md:h-auto" src={logo5} alt="" />
+                  </Link>
                   <Image className=" h-[16px] md:h-auto" src={logo6} alt="" />
-                  <Image className=" h-[18px] md:h-auto" src={linkedin} alt="" />
+                  <Link target="_blank" href="https://www.linkedin.com/company/seventhythree/">
+                    <Image className=" h-[18px] md:h-auto" src={linkedin} alt="" />
+                  </Link>
                 </div>
                 <div className=" xl:hidden">office@73capital.xyz</div>
               </div>
